@@ -1,0 +1,159 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	background-color: #bbffbb;
+	border-bottom: 4px solid darkgreen;
+}
+
+header h1 {
+	padding: 8px 16px;
+	user-select: none;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+input[type="text"] {
+	padding: 4px;
+}
+input[type="password"] {
+	padding: 4px;
+}
+
+textarea {
+	padding: 4px;
+}
+
+.link-button {
+	text-decoration: none;
+	background-color: lightgoldenrodyellow;
+	color: black;
+	padding: 0px 8px;
+	border: solid 2px black;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.link-button:hover {
+	cursor: pointer;
+	background-color: lightyellow;
+}
+.link-button:active {
+	background-color: goldenrod;
+}
+
+.post {
+	padding: 8px;
+	border-left: solid 1px black;
+	border-bottom: solid 1px black;
+	border-bottom-left-radius: 8px;
+}
+
+.main-container {
+	width: 60%;
+	margin: auto;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding: 8px;
+	border: dashed 4px black;
+	border-radius: 16px;
+}
+
+.date {
+	font-weight: bold;
+	color: gray;
+	text-align: right;
+	font-size: 0.5em;
+}
+
+.post-detail {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+}
+
+
+.submit-form-grid {
+	display: grid;
+	grid-template-columns: 140px 1fr 0.5fr 0.5fr;
+	gap: 8px 4px;
+}
+
+.submit-form-grid #title {
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+.submit-form-grid #author {
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+.submit-form-grid #message {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	resize: vertical;
+	min-height: 96px;
+}
+.submit-form-grid #password {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+.form-style {
+	padding: 16px;
+	border: solid 1px black;
+	border-radius: 8px;
+}
+
+.flex-col-spacing {
+	display: flex;
+	flex-flow: column;
+	gap: 8px;
+}
+
+.error-text {
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: underline wavy 1.5px;
+}
+
+.paging {
+	margin-top: 8px;
+	display: flex;
+	gap: 4px;
+	justify-content: center;
+}
+
+.paging a {
+	text-decoration: none;
+	color: black;
+	border: solid 2px black;
+	border-radius: 9999px;
+	padding: 2px 8px;
+	user-select: none;
+}
+
+.paging a:not(.current-page):hover {
+	background-color: lightyellow;
+}
+
+.paging a:not(.current-page):active {
+	background-color: goldenrod;
+}
+
+.paging .current-page {
+	background-color: #bbffbb;
+	border-color: gray;
+}
+
+.page-size-selector {
+	display: flex;
+	gap: 4px;
+	font-size: 12px;
+	margin-top: 8px;
+}
